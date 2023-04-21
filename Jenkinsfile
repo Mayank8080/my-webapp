@@ -3,7 +3,8 @@ pipeline {
     stages{
         stage("git"){
             steps{
-                git 'https://github.com/Mayank8080/my-webapp.git'
+                git url: 'https://github.com/Mayank8080/my-webapp.git', branch: 'main'
+
             }
         }
         stage("Build"){
