@@ -12,6 +12,10 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
+         stage("Deploy"){
+            steps{
+                deploy adapter: tomcat9(credentialsId: '04fc1744-99ea-453d-b82e-2f8bc13c9fb8', url: 'http://localhost:9006/manager/html'), contextPath: '/my-webapp', war: '**/*.war'
+            }
     }
 }
 
