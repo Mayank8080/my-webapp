@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        Path = "/usr/share/man/man1/mvn.1.gz:$Path"
-    }
     stages{
         stage("git"){
             steps{
@@ -15,4 +12,4 @@ pipeline {
             }
         }
     }
-}
+
