@@ -37,6 +37,11 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+             <server>
+    <id>TomcatServer</id>
+    <username>manager</username>
+    <password>Excel@123</password>
+</server>
 
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
