@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    environment {
+        PATH = '/usr/share/man/man1/:$PATH'
+}
     stages{
         stage("git"){
             steps{
