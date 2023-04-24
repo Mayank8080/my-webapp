@@ -25,6 +25,11 @@
       </plugin>
     </plugins>
   </build>
+<server>
+    <id>TomcatServer</id>
+    <username>manager</username>
+    <password>Excel@123</password>
+</server>
 
   <dependencies>
 
